@@ -1,5 +1,6 @@
 #!/bin/bash
     # Automatically Updates System Time According to the NIST Atomic Clock in a Linux Environment
+    sleep 60
     nistTime=$(curl -I --insecure 'tv360.vn' | grep "ate:")
     echo $nistTime
     dateString=$(echo $nistTime | cut -d' ' -f2-7)
