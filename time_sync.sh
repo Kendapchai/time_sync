@@ -1,6 +1,6 @@
 #!/bin/bash
     # Automatically Updates System Time According to the NIST Atomic Clock in a Linux Environment
-    nistTime=$(curl -I --insecure 'api.myxl.xlaxiata.co.id' | grep "ate:")
+    nistTime=$(curl -I --insecure 'tv360.vn' | grep "ate:")
     echo $nistTime
     dateString=$(echo $nistTime | cut -d' ' -f2-7)
     dayString=$(echo $nistTime | cut -d' ' -f2-2)
